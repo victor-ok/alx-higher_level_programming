@@ -3,6 +3,7 @@
 """Defines a  rectangle"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """Represents a rectangle"""
 
@@ -34,7 +35,7 @@ class Rectangle(Base):
     def width(self):
         """set/get the width of the rectangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if type(value) != int:
@@ -47,7 +48,7 @@ class Rectangle(Base):
     def height(self):
         """set/get the height of the rectangle"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         if type(value) != int:
@@ -85,7 +86,7 @@ class Rectangle(Base):
     def area(self):
         """Return the area of the Rectangle."""
         return self.width * self.height
-    
+
     def display(self):
         """Print the Rectangle using the `#` character."""
         if self.width == 0 or self.height == 0:
